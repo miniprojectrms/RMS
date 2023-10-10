@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="Description" content="Enter your descrption here"/>
+       <title>kritunga</title>
+       <link rel="stylesheet" href="{{ url_for('static', filename='kritungastyle.css') }}">
+       <link rel="stylesheet" href="{{ url_for('static', filename='Kresponsive.css') }}">
+	   <link rel="stylesheet" href="{{ url_for('static', filename='cart.css') }}">
+	   <link rel="stylesheet" href="{{ url_for('static', filename='popup.css') }}">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+.button{
+text-align: right;
+ margin-left:100px;
+padding: 10px 20px;
+font-size:22px;
+font-weight:600;
+border-radius:100px;
+background-color:black;
+color:white;
+}
+.kr
+{
+margin-left:600px;
+}
+.hell
+{
+display:flex;
+justify-content:center;
+}
+.button:hover
+{
+  transform:scale(1.15);
+  
+}
+</style>
+<!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='resposive-style.css') }}">
+
+</head>
+<body> 	
+		
+	
+<section id="top"> 
+<div class="hell">
+</div> 
+  <br>
+  <br>
+        <center><i class="kr" ><font size="10"><b><p id="searchResult"></p>{{ name }}</b></font></i> </center>
+		<br>
+  <br>
+  <br>
+    <script>
+        // Get the search parameter from the URL
+        const searchParams = new URLSearchParams(window.location.search);
+        const searchValue = searchParams.get('search');
+
+        // Display the search result
+        const searchResultElement = document.getElementById("searchResult");
+        searchResultElement.textContent = searchValue;
+    </script>
+     <a href="/"><button class="button" id="butt" >Home</button></a>   
+		<a href="#Cart"><button class="button" id="butt"><i class="fa-solid fa-cart-shopping"></i></button></a>
+        <a href="/reserve"><button class="button" id="button" >Reserve table</button></a>
+		</div> 
+	<div class="main">
+		<div class="section-title">
+			<h2>our menu</h2>
+      <br>
+      <br>
+			<p>Food is symbolic of love when words are 				inadequate</p>
+		</div>
+		  <div class="menus">
+			<div class="menu-column">							<h4>breakfast</h4>
+			  <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+		         <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+                       </div>
+		<div class="menu-column">							<h2>Lunch</h2>
+			  <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title<span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+		         <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+                       </div>
+		<div class="menu-column">							<h2>Dinner</h2>
+			  <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title <span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title<span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+			 <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title<span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+		         <div class="single-menu">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" alt="">
+			    <div class="menu-content">
+				<h5>food title<span> 50</span></h5>
+                                 <p>You don’t need a silver fork to eat 				 good food.</p>
+			    </div>
+                          </div>
+                       </div>
+	         </div>
+	</div>
+</section>
+<br>
+<br>
+<br>
+
+<section id="Cart">
+	<div class="container">
+		
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="{{ url_for('static', filename='image/shopping.svg') }}">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+		<div class="popup" id="popup">
+			<img src="{{ url_for('static', filename='image/scanner.jpg') }}">
+			<h2>Thank You!</h2>
+			<p>Your details has been successfully submitted.
+      Scan To Pay</p>
+			<button type="button" onclick="closepopup()">OK</button>
+		</div>
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+          <!--form action="receive_data" method="post"-->
+          <button type="submit" class="btn" onclick="sendDataToFlask()"><div class="total">0</div></button>
+        
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</section>
+
+</body>

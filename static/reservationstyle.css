@@ -1,0 +1,96 @@
+body{
+font-family:'Raleway',sans-serif;
+font-weight:400;
+color:#fff;
+letter-spacing:1px;
+
+}
+
+.container{
+background-color:#fafafa;
+margin:200px;
+box-shadow:10px 15px 20px rgba(0,0,0,.45);
+display:grid;
+grid-template-columns:40% 60%;
+
+}
+.container-time
+{
+background-color:rgba(0,0,0,.95);
+padding:50px;
+outline:3px dashed #998100;
+outline-offset:-30px;
+text-align:center;
+color: #fff;
+}
+
+.heading
+{
+font-size:35px;
+text-transform:uppercase;
+}
+.heading-days
+{
+color:#998100;
+font-size:30px;
+
+}
+.heading-phone
+{
+font-size:20px;
+}
+.container-form
+{
+padding:20px 0;
+margin:0 auto;
+color:#000;
+}
+form
+{
+display:grid;
+grid-row-gap:20px;
+}
+form p
+{
+font-weight:600;
+
+}
+.form-feild
+{
+display:flex;
+justify-content:space-between;
+}
+input,select
+{
+pad:18px 15px;
+}
+.but
+{
+background-color:rgba(0,0,0,0.95);
+color:#fff;
+padding:10px 20px;
+border:none;
+font-size:18px;
+border-radius:100px;
+cursor:pointer;
+}
+.but:hover
+{
+transform:scale(1.03);
+background-color:grey;
+color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Booking</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='reservationstyle.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='popup.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='resposive-style.css') }}">
+
+</head>
+<body>
+
+	<header>
+<nav class="navbar navbar-expand-lg navigation-wrap">
+<nav class="navbar fixed-top navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://cdn.dribbble.com/users/4591324/screenshots/9528532/media/8bed6de6c139261a4ea740f64ccbb2ed.jpg?compress=1&resize=400x300&vertical=top" width="100px",height="100px"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('home1') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#explore-food">Explore-Food</a></li>
+            <li><a class="dropdown-item" href="#testimonial">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Review</a>
+        </li>
+      </ul>
+        <form class="d-flex" id="searchForm" action='/search' method="post" >  
+          <input class="form-control me-2" type="text" id="searchInput" name="searchInput" placeholder="Search restaurant" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+
+      <div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+    Hello {{ roll }}
+  </button>
+  <form class="dropdown-menu p-4" action="/">
+    <button type="submit" class="btn btn-primary">Sign Out</button>
+  </form>
+</div>
+</nav>
+</nav>
+</header>
+
+
+<div class="container">
+	<div class="container-time">
+		<h2 class="heading">Time open</h2>
+                <h3 class="heading-days">Monday-Friday</h3>
+		<p>7am - 11am(breakfast)</p>
+		<p>11am-10pm(lunch/dinner)</p>
+
+		<h3 class="heading-days">Saturday and Sunday</h3>
+		<p>9am - 1pm(breakfast)</p>
+		<p>1pm-10pm(lunch/dinner)</p>
+		<hr>
+		<h4 class="heading-phone">call us:123 456 7890</h4>
+		
+
+	</div>
+	
+	<div class="container-form">
+		
+		<form action='/dbentry' method='post'>
+			<h2 class="heading heading-yellow">Reservation Online</h2>
+			<!--div class="popup" id="popup">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flat_tick_icon.svg/768px-Flat_tick_icon.svg.png">
+				<h2>Thank You!</h2>
+				<p>Your details has been successfully submitted.Thanks!</p>
+				<button type="button" onclick="closepopup()">OK</button>
+    </div-->
+			<div class="form-feild">
+				<p>Your Name</p>
+				<input type="text" placeholder="Your name" name="name" required>
+			</div>
+			<div class="form-feild">
+				<p>Your Email</p>
+				<input type="text" placeholder="Your email" name="email" required>
+			</div>
+			<div class="form-feild">
+				<p>Date</p>
+				<input type="date" name="date" required>
+			</div>
+			<div class="form-feild">
+				<p>Time</p>
+				<input type="time" name="time" required>
+			</div>
+			<div class="form-feild">
+				<p>How many people</p>
+				<select name="people" required >
+					<option value="1">1 person</option>
+					<option value="2">2 persons</option>
+					<option value="3">3 persons</option>
+					<option value="4">4 persons</option>
+					<option value="8">more than 4</option>
+				</select>
+			</div>
+			<button  type="submit" class="but">submit</button>
+		</form>
+	</div>
+</div>
+
+<!-- Make sure to include the script tag to load the SMTPJS library -->
+
+
+
+
+
+
+</body>
+</html>
